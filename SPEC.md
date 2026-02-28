@@ -149,14 +149,14 @@ A full-stack web application that allows users to track personal income and expe
 
 ### Phase 0: Foundation Setup
 
-- Status: Not Done —Create a new GitHub repository named `personal-finance-tracker`
+- Status: Done —Create a new GitHub repository named `personal-finance-tracker`
 - Status: Done —Create a Neon PostgreSQL database and copy the connection string
 - Status: Done —Initialize the Python backend with `uv init` inside a `backend/` directory
 - Status: Done —Initialize the Next.js frontend with `npx create-next-app@latest` inside a `frontend/` directory
 - Status: Done —Create a root `.gitignore` covering `__pycache__`, `.env`, `node_modules`, `.next`, `*.pyc`, and `.venv`
 - Status: Done —Create a `backend/.env` file with `DATABASE_URL` set to the Neon connection string
 - Status: Done —Create a `frontend/.env.local` file with `NEXT_PUBLIC_API_URL=http://localhost:8000`
-- Status: Not Done —Verify both `backend/` and `frontend/` directories are committed to GitHub
+- Status: Done —Verify both `backend/` and `frontend/` directories are committed to GitHub
 
 ---
 

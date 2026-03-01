@@ -163,18 +163,21 @@ A full-stack web application that allows users to track personal income and expe
 ### Phase 1: Backend Development
 
 - Status: Done —Add FastAPI, SQLAlchemy, psycopg2-binary, python-dotenv, and uvicorn as dependencies via `uv add`
-- Status: Not Done —Create `backend/database.py` — set up SQLAlchemy engine and `SessionLocal` using `DATABASE_URL` from `.env`
-- Status: Not Done —Create `backend/models.py` — define the `Transaction` SQLAlchemy model with all required columns
-- Status: Not Done —Create `backend/schemas.py` — define Pydantic schemas: `TransactionCreate`, `TransactionUpdate`, `TransactionResponse`, and `SummaryResponse`
-- Status: Not Done —Create `backend/main.py` — initialize FastAPI app, call `Base.metadata.create_all()` on startup
-- Status: Not Done —Implement `GET /transactions` endpoint returning all transactions
-- Status: Not Done —Implement `POST /transactions` endpoint creating a new transaction
-- Status: Not Done —Implement `GET /transactions/{id}` endpoint returning a single transaction or 404
-- Status: Not Done —Implement `PUT /transactions/{id}` endpoint updating a transaction or 404
-- Status: Not Done —Implement `DELETE /transactions/{id}` endpoint deleting a transaction or 404
-- Status: Not Done —Implement `GET /summary` endpoint computing total income, total expenses, net balance, and category breakdown
-- Status: Not Done —Configure CORS in `main.py` to allow requests from `http://localhost:3000`
-- Status: Not Done —Run the backend with `uvicorn main:app --reload` and verify all endpoints via browser or curl
+- Status: Done —Create `backend/database.py` — set up SQLAlchemy engine and `SessionLocal` using `DATABASE_URL` from `.env`
+- Status: Done —Create `backend/models.py` — define the `Transaction` SQLAlchemy model with all required columns
+- Status: Done —Create `backend/schemas.py` — define Pydantic schemas: `TransactionCreate`, `TransactionUpdate`, `TransactionResponse`, and `SummaryResponse`
+- Status: Done —Create `backend/main.py` — initialize FastAPI app, call `Base.metadata.create_all()` on startup
+- Status: Done —Implement `GET /transactions` endpoint returning all transactions
+- Status: Done —Implement `POST /transactions` endpoint creating a new transaction
+- Status: Done —Implement `GET /transactions/{id}` endpoint returning a single transaction or 404
+- Status: Done —Implement `PUT /transactions/{id}` endpoint updating a transaction or 404
+- Status: Done —Implement `DELETE /transactions/{id}` endpoint deleting a transaction or 404
+- Status: Done —Implement `GET /summary` endpoint computing total income, total expenses, net balance, and category breakdown
+- Status: Done —Configure CORS in `main.py` to allow requests from `http://localhost:3000`
+- Status: Done —Run the backend with `uvicorn main:app --reload` and verify all endpoints via browser or curl
+- Status: Done —Category validation is case-insensitive; input is normalized to title case before validation
+- Status: Done —Fixed `date` field name/type shadowing in Python 3.14; `TransactionUpdate.date` uses `Optional[str | DateType]` to accept both date strings and date objects
+- Status: Done —`type` field is case-insensitive and accepts plural forms: "expenses"→"expense", "Incomes"→"income", "EXPENSE"→"expense"
 
 ---
 

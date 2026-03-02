@@ -18,3 +18,9 @@ npm-debug.log*
 
 # Misc
 .DS_Store
+
+# Screenshot tooling (one-off Playwright script)
+docs/take-screenshots.js
+docs/package.json
+docs/package-lock.json
+docs/node_modules/

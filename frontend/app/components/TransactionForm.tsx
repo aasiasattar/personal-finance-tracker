@@ -236,7 +236,7 @@ export default function TransactionForm({ transaction }: Props) {
             )}
           </AnimatePresence>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
             {/* Type toggle */}
             <div className="flex flex-col gap-1.5">
               <span className="text-xs font-medium text-gray-400">Type</span>

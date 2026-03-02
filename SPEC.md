@@ -215,19 +215,23 @@ A full-stack web application that allows users to track personal income and expe
 
 ### Phase 4: Testing
 
-- Status: Not Done —Add `pytest` and `httpx` as dev dependencies via `uv add --dev`
-- Status: Not Done —Create `backend/test_main.py` with a pytest fixture that sets up a test database and FastAPI `TestClient`
-- Status: Not Done —Write a pytest test: `POST /transactions` creates a transaction and returns 200 with correct data
-- Status: Not Done —Write a pytest test: `GET /transactions` returns a list containing the created transaction
-- Status: Not Done —Write a pytest test: `PUT /transactions/{id}` updates the transaction and returns updated data
-- Status: Not Done —Write a pytest test: `DELETE /transactions/{id}` removes the transaction and returns success
-- Status: Not Done —Write a pytest test: `GET /summary` returns correct totals after inserting known transactions
-- Status: Not Done —Run all backend tests with `pytest` and confirm ≥5 tests pass
-- Status: Not Done —Create `frontend/vitest.config.ts` and configure Vitest with jsdom environment
-- Status: Not Done —Write a Vitest test: `TransactionForm` renders all required input fields
-- Status: Not Done —Write a Vitest test: `TransactionForm` shows income-specific categories when type is set to "income"
-- Status: Not Done —Write a Vitest test: `Navbar` renders links to Dashboard and Transactions
-- Status: Not Done —Run all frontend tests with `npx vitest run` and confirm ≥3 tests pass
+- Status: Done —Add `pytest`, `pytest-asyncio`, and `httpx` as dev dependencies via `uv add --dev`
+- Status: Done —Create `backend/tests/conftest.py` with a pytest-asyncio fixture using in-memory SQLite + StaticPool; overrides `get_db` dependency
+- Status: Done —Write a pytest test: `POST /transactions` creates a transaction and returns 201 with correct data
+- Status: Done —Write a pytest test: `GET /transactions` returns a list containing all created transactions
+- Status: Done —Write a pytest test: `GET /transactions?type=income` filters by type correctly
+- Status: Done —Write a pytest test: `GET /transactions/{id}` returns the correct transaction; 404 for missing IDs
+- Status: Done —Write a pytest test: `PUT /transactions/{id}` updates the transaction and returns updated data
+- Status: Done —Write a pytest test: `DELETE /transactions/{id}` removes the transaction (204) and confirms 404 after
+- Status: Done —Write a pytest test: `GET /summary` returns correct totals and category breakdown
+- Status: Done —Write a pytest test: rejects negative amounts (422) and invalid type (422)
+- Status: Done —Run all backend tests with `pytest` and confirm 11/11 tests pass
+- Status: Done —Create `frontend/vitest.config.ts` and configure Vitest with jsdom environment and `@` path alias
+- Status: Done —Create `frontend/vitest.setup.ts` importing `@testing-library/jest-dom`
+- Status: Done —Write Vitest tests for `SummaryCards`: labels render, amounts formatted as currency, negative balance
+- Status: Done —Write Vitest tests for `TransactionForm`: input fields, validation errors, type switching, edit mode pre-population
+- Status: Done —Write Vitest tests for `TransactionsList`: descriptions, empty state, transaction count, search filter, no-results state, edit links
+- Status: Done —Run all frontend tests with `npm test` and confirm 14/14 tests pass
 
 ---
 

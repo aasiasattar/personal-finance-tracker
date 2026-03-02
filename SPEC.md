@@ -203,13 +203,13 @@ A full-stack web application that allows users to track personal income and expe
 
 ### Phase 3: Integration
 
-- Status: Not Done —Confirm the backend is running and accessible at `http://localhost:8000`
-- Status: Not Done —Confirm the frontend is running and accessible at `http://localhost:3000`
-- Status: Not Done —Test end-to-end: add a new transaction via the frontend form and verify it appears in the list
-- Status: Not Done —Test end-to-end: edit an existing transaction and verify the update is reflected
-- Status: Not Done —Test end-to-end: delete a transaction and verify it is removed from the list
-- Status: Not Done —Verify the Dashboard summary cards and pie chart update correctly after add/edit/delete operations
-- Status: Not Done —Confirm no CORS errors appear in the browser console during any API calls
+- Status: Done —Confirm the backend is running and accessible at `http://localhost:8000`
+- Status: Done —Confirm the frontend is running and accessible at `http://localhost:3000`
+- Status: Done —Test end-to-end: add a new transaction via the frontend form and verify it appears in the list
+- Status: Done —Test end-to-end: edit an existing transaction and verify the update is reflected
+- Status: Done —Test end-to-end: delete a transaction and verify it is removed from the list
+- Status: Done —Verify the Dashboard summary cards and pie chart update correctly after add/edit/delete operations
+- Status: Done —Confirm no CORS errors appear in the browser console during any API calls
 
 ---
 
@@ -241,15 +241,15 @@ A full-stack web application that allows users to track personal income and expe
 - Status: Done —Add at least one screenshot of the Dashboard to the README
 - Status: Done —Add at least one screenshot of the Transactions list to the README
 - Status: Done —Ensure all code is committed and pushed to GitHub
-- Status: Not Done —Create `.env.example` in `backend/` listing required environment variables without values
-- Status: Not Done —Create `.env.example` in `frontend/` listing `NEXT_PUBLIC_API_URL` without a value
-- Status: Not Done —Submit the GitHub repository link per assignment instructions
+- Status: Done —Create `.env.example` in `backend/` listing required environment variables without values
+- Status: Done —Create `.env.example` in `frontend/` listing `NEXT_PUBLIC_API_URL` without a value
+- Status: Done —Submit the GitHub repository link per assignment instructions
 
 ---
 
 ### Phase 6: Deployment
 
-- Status: In Progress —Prepare deployment files: `backend/Procfile`, `frontend/.env.production`, open CORS (`allow_origins=["*"]`), verify all deps in `pyproject.toml`, confirm `npm run build` succeeds
-- Status: Not Done —Deploy backend to Railway: connect GitHub repo, set `DATABASE_URL` env var, confirm `/docs` is live
-- Status: Not Done —Deploy frontend to Vercel: connect GitHub repo, set `NEXT_PUBLIC_API_URL` to Railway backend URL, confirm app is live
-- Status: Not Done —Test live application end-to-end: add, edit, delete a transaction; verify dashboard updates
+- Status: Done —Prepare deployment files: `backend/Procfile`, `frontend/.env.production`, open CORS (`allow_origins=["*"]`), verify all deps in `pyproject.toml`, confirm `npm run build` succeeds
+- Status: Done —Deploy backend to Railway: connect GitHub repo, set `DATABASE_URL` env var, confirm `/docs` is live
+- Status: Done —Deploy frontend to Vercel: connect GitHub repo, set `NEXT_PUBLIC_API_URL` to Railway backend URL, confirm app is live
+- Status: Done —Test live application end-to-end: add, edit, delete a transaction; verify dashboard updates

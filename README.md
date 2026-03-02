@@ -4,6 +4,16 @@ A full-stack web application for tracking personal income and expenses. Built wi
 
 ---
 
+## Live Demo
+
+| | URL |
+|---|---|
+| **Frontend** | https://personal-finance-tracker-wmbqvfsf7-aasiasattars-projects.vercel.app |
+| **Backend API** | https://personal-finance-tracker-production-7afb.up.railway.app |
+| **API Docs** | https://personal-finance-tracker-production-7afb.up.railway.app/docs |
+
+---
+
 ## Features
 
 ### Dashboard

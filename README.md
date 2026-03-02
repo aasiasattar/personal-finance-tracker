@@ -297,8 +297,6 @@ Expected output:
 
 ## Screenshots
 
-> _Add screenshots here once the app is running._
-
 ### Dashboard
 
 ![Dashboard](docs/screenshots/dashboard.png)

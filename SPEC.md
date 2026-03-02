@@ -183,18 +183,21 @@ A full-stack web application that allows users to track personal income and expe
 
 ### Phase 2: Frontend Development
 
-- Status: Not Done —Install dependencies: `recharts`, `@testing-library/react`, `vitest`, and any required types
-- Status: Not Done —Create `frontend/lib/actions.ts` — implement Server Actions for `getTransactions`, `createTransaction`, `updateTransaction`, `deleteTransaction`, and `getSummary`
-- Status: Not Done —Build the `Navbar` component with navigation links to Dashboard and Transactions
-- Status: Not Done —Build the Dashboard page (`app/page.tsx`) displaying summary cards (total income, total expenses, net balance)
-- Status: Not Done —Integrate a `PieChart` (Recharts) on the Dashboard showing expense breakdown by category
-- Status: Not Done —Build the Transactions list page (`app/transactions/page.tsx`) displaying all transactions in a table
-- Status: Not Done —Add Edit and Delete buttons to each row in the Transactions list, wired to the appropriate Server Actions
-- Status: Not Done —Build the `TransactionForm` component with controlled inputs for amount, type, category, description, and date
-- Status: Not Done —Implement category dropdown logic so options change based on the selected transaction type
-- Status: Not Done —Build the Add Transaction page (`app/transactions/new/page.tsx`) using `TransactionForm`
-- Status: Not Done —Build the Edit Transaction page (`app/transactions/[id]/edit/page.tsx`) pre-populated with existing data
-- Status: Not Done —Apply Tailwind CSS styling for a clean, readable layout across all pages
+- Status: Done —Install dependencies: `recharts`, `framer-motion`, `lucide-react` added via npm
+- Status: Done —Create `frontend/app/actions/transactions.ts` — implement Server Actions for `getTransactions`, `getTransactionById`, `createTransaction`, `updateTransaction`, `deleteTransaction`, and `getSummary` with full TypeScript types
+- Status: Done —Build the `Navbar` component with navigation links to Dashboard and Transactions
+- Status: Done —Build the Dashboard page (`app/page.tsx`) displaying summary cards (total income, total expenses, net balance)
+- Status: Done —Integrate spending breakdown chart on the Dashboard (animated horizontal bar chart with gradient fills and staggered Framer Motion animations)
+- Status: Done —Added Hero Section with time-based greeting, net balance card, transaction count, and motivational tagline
+- Status: Done —Applied dark theme (`#0F0F1A` base, radial violet/blue glows) across the entire app via `globals.css` and `layout.tsx`
+- Status: Done —Applied glassmorphism styling (`bg-white/5 backdrop-blur border-white/10`) to all cards and panels
+- Status: Done —Build the Transactions list page (`app/transactions/page.tsx`) with search, type/category filters, sortable table (desktop) and card layout (mobile)
+- Status: Done —Add Edit and Delete buttons to each row; delete has animated confirmation modal; edit links to `/transactions/[id]/edit`
+- Status: Done —Build the `TransactionForm` component with controlled inputs for amount, type, category, description, and date
+- Status: Done —Implement category dropdown logic so options change based on the selected transaction type
+- Status: Done —Build the Add Transaction page (`app/transactions/new/page.tsx`) using `TransactionForm`; redirects to `/transactions` on success
+- Status: Done —Navbar "Transactions" link restored and fully functional
+- Status: Done —Build the Edit Transaction page (`app/transactions/[id]/edit/page.tsx`) pre-populated with existing data; returns 404 for invalid IDs
 
 ---
 

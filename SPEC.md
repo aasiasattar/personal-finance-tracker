@@ -237,10 +237,19 @@ A full-stack web application that allows users to track personal income and expe
 
 ### Phase 5: Documentation & Submission
 
-- Status: Not Done —Create `README.md` at the project root with: project description, tech stack, setup instructions for backend and frontend, how to run tests, and screenshots
+- Status: Done —Create `README.md` at the project root with: project description, tech stack, setup instructions for backend and frontend, how to run tests, and screenshots
+- Status: Done —Add at least one screenshot of the Dashboard to the README
+- Status: Done —Add at least one screenshot of the Transactions list to the README
+- Status: Done —Ensure all code is committed and pushed to GitHub
 - Status: Not Done —Create `.env.example` in `backend/` listing required environment variables without values
 - Status: Not Done —Create `.env.example` in `frontend/` listing `NEXT_PUBLIC_API_URL` without a value
-- Status: Not Done —Add at least one screenshot of the Dashboard to the README
-- Status: Not Done —Add at least one screenshot of the Transactions list to the README
-- Status: Not Done —Ensure all code is committed and pushed to GitHub
 - Status: Not Done —Submit the GitHub repository link per assignment instructions
+
+---
+
+### Phase 6: Deployment
+
+- Status: In Progress —Prepare deployment files: `backend/Procfile`, `frontend/.env.production`, open CORS (`allow_origins=["*"]`), verify all deps in `pyproject.toml`, confirm `npm run build` succeeds
+- Status: Not Done —Deploy backend to Railway: connect GitHub repo, set `DATABASE_URL` env var, confirm `/docs` is live
+- Status: Not Done —Deploy frontend to Vercel: connect GitHub repo, set `NEXT_PUBLIC_API_URL` to Railway backend URL, confirm app is live
+- Status: Not Done —Test live application end-to-end: add, edit, delete a transaction; verify dashboard updates
